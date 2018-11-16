@@ -53,14 +53,16 @@ class OrderDetailsViewController: UIViewController {
     }
     
     func makeRoundedViewWithDropShadow(currentView: UIView) {
-        // corner radius
+        /// corner radius
         currentView.layer.cornerRadius = 10
+        
+        currentView.layer.borderWidth = 0.0
         
         // shadow
         currentView.layer.shadowColor = UIColor.black.cgColor
-        currentView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        currentView.layer.shadowOffset = CGSize(width: 3, height: 3)
         currentView.layer.shadowOpacity = 0.5
-        currentView.layer.shadowRadius = 2.0
+        currentView.layer.shadowRadius = 3.0
     }
     
     func createItemLabel(labeltext: String, labelYPosition: CGFloat) {

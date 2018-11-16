@@ -94,19 +94,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-hO-uiO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fXg-hO-uiO">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-cU-ikV" userLabel="Button Container">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPb-cU-ikV" userLabel="Button Container">
                                 <rect key="frame" x="0.0" y="262.66666666666669" width="414" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-Je-8jR" customClass="RoundButton" customModule="Bootcamp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-Je-8jR" customClass="RoundButton" customModule="Bootcamp" customModuleProvider="target">
                                         <rect key="frame" x="43.666666666666657" y="42" width="327" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.30678248405456543" green="0.67816811800003052" blue="0.37628954648971558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="Zfz-TE-UVB"/>
-                                            <constraint firstAttribute="width" constant="327" id="pMI-JJ-3FK"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="Make An Order">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,14 +115,14 @@
                                                 <real key="value" value="23"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6wR-qe-K4Y" kind="show" id="gPy-xY-wUA"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-tg-hzG" customClass="RoundButton" customModule="Bootcamp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-tg-hzG" customClass="RoundButton" customModule="Bootcamp" customModuleProvider="target">
                                         <rect key="frame" x="43.666666666666657" y="123" width="327" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.325458824634552" green="0.71591866016387939" blue="0.39731734991073608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="327" id="5LD-wU-IIQ"/>
-                                            <constraint firstAttribute="height" constant="55" id="Y6z-Ax-x8n"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <state key="normal" title="View Orders">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,26 +137,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="211" id="8LR-Xq-KjJ"/>
-                                    <constraint firstItem="sRJ-tg-hzG" firstAttribute="centerX" secondItem="RPb-cU-ikV" secondAttribute="centerX" id="KD0-71-ltf"/>
-                                    <constraint firstItem="sRJ-tg-hzG" firstAttribute="centerY" secondItem="RPb-cU-ikV" secondAttribute="centerY" constant="45" id="OHk-z9-glI"/>
-                                    <constraint firstItem="cpI-Je-8jR" firstAttribute="centerY" secondItem="RPb-cU-ikV" secondAttribute="centerY" constant="-35.5" id="eKq-cf-iMb"/>
-                                    <constraint firstItem="cpI-Je-8jR" firstAttribute="centerX" secondItem="RPb-cU-ikV" secondAttribute="centerX" id="mPR-e5-Zso"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="RPb-cU-ikV" firstAttribute="trailing" secondItem="oNy-cB-hSn" secondAttribute="trailing" id="4fn-ts-0Lm"/>
-                            <constraint firstItem="fXg-hO-uiO" firstAttribute="top" secondItem="Le8-oA-qeC" secondAttribute="top" id="74c-s0-jh1"/>
-                            <constraint firstItem="RPb-cU-ikV" firstAttribute="centerY" secondItem="Le8-oA-qeC" secondAttribute="centerY" id="IMR-H0-RjF"/>
-                            <constraint firstItem="fXg-hO-uiO" firstAttribute="bottom" secondItem="oNy-cB-hSn" secondAttribute="bottom" id="K9h-WB-tK0"/>
-                            <constraint firstItem="fXg-hO-uiO" firstAttribute="leading" secondItem="oNy-cB-hSn" secondAttribute="leading" id="fRH-rZ-jUW"/>
-                            <constraint firstItem="fXg-hO-uiO" firstAttribute="trailing" secondItem="oNy-cB-hSn" secondAttribute="trailing" id="hEy-Mn-21x"/>
-                            <constraint firstItem="RPb-cU-ikV" firstAttribute="centerX" secondItem="Le8-oA-qeC" secondAttribute="centerX" id="hcL-FG-tEU"/>
-                            <constraint firstItem="RPb-cU-ikV" firstAttribute="leading" secondItem="oNy-cB-hSn" secondAttribute="leading" id="rWo-Yz-UYG"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oNy-cB-hSn"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q9p-VI-Ooh">
@@ -170,6 +152,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xst-HG-srP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="-1220.3804347826087"/>
+        </scene>
+        <!--Make Order View Controller-->
+        <scene sceneID="xV5-5t-hmL">
+            <objects>
+                <viewController id="6wR-qe-K4Y" customClass="MakeOrderViewController" customModule="Bootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ran-Qr-VqG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eZs-Dp-GvW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qo-Tg-3uq" userLabel="Main Container">
+                                <rect key="frame" x="46" y="176" width="322" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-i1-MMG" customClass="RoundButton" customModule="Bootcamp" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="320" width="262" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.30678248409999997" green="0.67816811799999999" blue="0.37628954650000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="Order">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="orderPressed:" destination="6wR-qe-K4Y" eventType="touchUpInside" id="AxT-IF-rm3"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyg-eU-v2b" userLabel="Date Container">
+                                        <rect key="frame" x="54" y="8" width="215" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pick a date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ3-eD-yZA">
+                                                <rect key="frame" x="57" y="16" width="158" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="u2y-52-MPt">
+                                                <rect key="frame" x="8" y="16" width="33" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLO-gF-o4h">
+                                        <rect key="frame" x="54" y="128" width="215" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i8X-MI-BjJ" userLabel="Biriyani-Full Switch">
+                                                <rect key="frame" x="160" y="30" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biriyani-Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-Qf-WkQ">
+                                                <rect key="frame" x="8" y="30" width="133" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-aK-KmY">
+                                                <rect key="frame" x="160" y="91" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biriyani-Half" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sO-yG-R8K">
+                                                <rect key="frame" x="8" y="90" width="139" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eZs-Dp-GvW" firstAttribute="trailing" secondItem="hLM-AT-Wb9" secondAttribute="trailing" id="Zzb-Ar-T58"/>
+                            <constraint firstItem="eZs-Dp-GvW" firstAttribute="top" secondItem="ran-Qr-VqG" secondAttribute="top" id="kr5-qe-vPc"/>
+                            <constraint firstItem="eZs-Dp-GvW" firstAttribute="bottom" secondItem="hLM-AT-Wb9" secondAttribute="bottom" id="olC-rh-KXp"/>
+                            <constraint firstItem="eZs-Dp-GvW" firstAttribute="leading" secondItem="hLM-AT-Wb9" secondAttribute="leading" id="rxm-A8-3IU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hLM-AT-Wb9"/>
+                    </view>
+                    <connections>
+                        <outlet property="biriyaniFullSwitch" destination="i8X-MI-BjJ" id="pn3-se-iYl"/>
+                        <outlet property="biriyaniHalfSwitch" destination="JIg-aK-KmY" id="AUU-cp-uuI"/>
+                        <outlet property="dateContainerView" destination="xyg-eU-v2b" id="Bbm-Mp-9aX"/>
+                        <outlet property="dateTextField" destination="hJ3-eD-yZA" id="s3d-6Y-k4V"/>
+                        <outlet property="itemContainerView" destination="zLO-gF-o4h" id="nuD-FM-SyO"/>
+                        <outlet property="mainContainerView" destination="3Qo-Tg-3uq" id="AeP-vL-IWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMf-lk-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373.913043478261" y="-1220.3804347826087"/>
         </scene>
         <!--View Orders View Controller-->
         <scene sceneID="VMc-U4-5tQ">
@@ -207,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntS-hD-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313.04347826087" y="-573.09782608695662"/>
+            <point key="canvasLocation" x="2272" y="-483"/>
         </scene>
         <!--Order Details View Controller-->
         <scene sceneID="8kw-uS-gZ8">
@@ -280,11 +367,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OkA-PF-Smk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3147.826086956522" y="-573.09782608695662"/>
+            <point key="canvasLocation" x="3142" y="-483"/>
         </scene>
     </scenes>
     <resources>
         <image name="LoginBackground" width="360" height="640"/>
+        <image name="calendar" width="96" height="96"/>
         <image name="icons8-circled-right-64" width="200.34782409667969" height="200.34782409667969"/>
         <image name="neutral-user-icon" width="72" height="72"/>
         <image name="normalBackground" width="360" height="640"/>

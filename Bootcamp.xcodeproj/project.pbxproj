@@ -19,6 +19,7 @@
 		AC929BC52192BBF0009F1278 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929BC42192BBEF009F1278 /* RoundButton.swift */; };
 		AC929BC721998454009F1278 /* ViewOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929BC621998454009F1278 /* ViewOrdersViewController.swift */; };
 		ACAE8732219EC17300F8DBEB /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */; };
+		ACAE8734219EEAC900F8DBEB /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8733219EEAC900F8DBEB /* MakeOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AC929BC42192BBEF009F1278 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AC929BC621998454009F1278 /* ViewOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrdersViewController.swift; sourceTree = "<group>"; };
 		ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		ACAE8733219EEAC900F8DBEB /* MakeOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
 		D08037B876676C933069EC32 /* Pods_Bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				AC929BBE2192B776009F1278 /* HomeViewController.swift */,
 				AC929BC621998454009F1278 /* ViewOrdersViewController.swift */,
 				ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */,
+				ACAE8733219EEAC900F8DBEB /* MakeOrderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				AC929BB7218C4839009F1278 /* LoginViewController.swift in Sources */,
 				AC929B9E218C3082009F1278 /* AppDelegate.swift in Sources */,
 				AC929BA6218C3082009F1278 /* Bootcamp.xcdatamodeld in Sources */,
+				ACAE8734219EEAC900F8DBEB /* MakeOrderViewController.swift in Sources */,
 				AC929BBF2192B776009F1278 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
