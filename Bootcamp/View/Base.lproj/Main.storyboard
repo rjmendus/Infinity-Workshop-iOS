@@ -179,11 +179,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="euY-o2-2N1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="euY-o2-2N1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xMs-SQ-RM7">
-                                <rect key="frame" x="64" y="138" width="287" height="542"/>
+                                <rect key="frame" x="64" y="254" width="287" height="426"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -197,19 +197,96 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gfi-gQ-Bl8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Nm8-iA-KSj"/>
+                    <navigationItem key="navigationItem" id="Nm8-iA-KSj">
+                        <barButtonItem key="backBarButtonItem" title="View Orders" id="mtu-Lc-rhi"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="xMs-SQ-RM7" id="Kbj-9L-Xtt"/>
+                        <segue destination="dug-SV-iTx" kind="show" identifier="viewOrderSegue" id="1ud-LJ-HEI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntS-hD-6Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2313.04347826087" y="-573.09782608695662"/>
         </scene>
+        <!--Order Details View Controller-->
+        <scene sceneID="8kw-uS-gZ8">
+            <objects>
+                <viewController id="dug-SV-iTx" customClass="OrderDetailsViewController" customModule="Bootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BuE-fe-m2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normalBackground" translatesAutoresizingMaskIntoConstraints="NO" id="mft-Et-DS0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dk1-HD-bE2" userLabel="Main Container">
+                                <rect key="frame" x="41" y="224" width="332" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-zS-363" userLabel="Items Container">
+                                        <rect key="frame" x="8" y="172" width="316" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admission Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyz-tX-jkO">
+                                        <rect key="frame" x="8" y="22" width="316" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sp-qa-40S">
+                                        <rect key="frame" x="8" y="67" width="316" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Receipt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1g-Oi-G0h">
+                                        <rect key="frame" x="69" y="119" width="194" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.32545882459999997" green="0.71591866019999995" blue="0.39731734990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2B-AE-QSx">
+                                        <rect key="frame" x="8" y="272" width="316" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mft-Et-DS0" firstAttribute="trailing" secondItem="yDB-yM-5qg" secondAttribute="trailing" id="Aal-fI-zqt"/>
+                            <constraint firstItem="mft-Et-DS0" firstAttribute="top" secondItem="BuE-fe-m2o" secondAttribute="top" id="dWZ-CN-F2T"/>
+                            <constraint firstItem="mft-Et-DS0" firstAttribute="leading" secondItem="yDB-yM-5qg" secondAttribute="leading" id="gRm-Dg-3Jb"/>
+                            <constraint firstItem="mft-Et-DS0" firstAttribute="bottom" secondItem="yDB-yM-5qg" secondAttribute="bottom" id="lZG-jM-9RH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yDB-yM-5qg"/>
+                    </view>
+                    <connections>
+                        <outlet property="admissionNumberLabel" destination="eyz-tX-jkO" id="Aui-aG-aeC"/>
+                        <outlet property="dateLabel" destination="3sp-qa-40S" id="YfO-Xl-3Ox"/>
+                        <outlet property="itemsView" destination="Cyd-zS-363" id="i4N-55-Ayv"/>
+                        <outlet property="mainContainerView" destination="dk1-HD-bE2" id="e3X-6o-TKj"/>
+                        <outlet property="totalLabel" destination="z2B-AE-QSx" id="Kh3-nT-zek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OkA-PF-Smk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3147.826086956522" y="-573.09782608695662"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LoginBackground" width="360" height="640"/>
         <image name="icons8-circled-right-64" width="200.34782409667969" height="200.34782409667969"/>
         <image name="neutral-user-icon" width="72" height="72"/>
+        <image name="normalBackground" width="360" height="640"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
 
     
     // Data model: These strings will be the data for the table view cells
+    var orderJSON: JSON = [:]
     var orders: [String] = []
     
     // cell reuse id (cells that scroll out of view can be reused)
@@ -46,9 +47,9 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                self.orderJSON = json
                 print("JSON: \(json)")
                 self.orders = json["Menu_ITEMS"].arrayValue.map({$0["OrderDate"].stringValue})
-                print(self.orders)
                 self.tableView.reloadData()
             case .failure(let error):
                 print(error)
@@ -76,6 +77,11 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        let selectedOrder = orderJSON["Menu_ITEMS"].arrayValue[indexPath.row]
+        print(selectedOrder)
+        let jsonString = selectedOrder.rawString()
+        UserDefaults.standard.set(jsonString, forKey: "CurrentOrder")
+        
+        self.performSegue(withIdentifier: "viewOrderSegue", sender: self)
     }
-
 }

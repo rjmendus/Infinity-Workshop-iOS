@@ -18,6 +18,7 @@
 		AC929BBF2192B776009F1278 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929BBE2192B776009F1278 /* HomeViewController.swift */; };
 		AC929BC52192BBF0009F1278 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929BC42192BBEF009F1278 /* RoundButton.swift */; };
 		AC929BC721998454009F1278 /* ViewOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929BC621998454009F1278 /* ViewOrdersViewController.swift */; };
+		ACAE8732219EC17300F8DBEB /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AC929BBE2192B776009F1278 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC929BC42192BBEF009F1278 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AC929BC621998454009F1278 /* ViewOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrdersViewController.swift; sourceTree = "<group>"; };
+		ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
 		D08037B876676C933069EC32 /* Pods_Bootcamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bootcamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				AC929BB6218C4839009F1278 /* LoginViewController.swift */,
 				AC929BBE2192B776009F1278 /* HomeViewController.swift */,
 				AC929BC621998454009F1278 /* ViewOrdersViewController.swift */,
+				ACAE8731219EC17300F8DBEB /* OrderDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAE8732219EC17300F8DBEB /* OrderDetailsViewController.swift in Sources */,
 				AC929BC721998454009F1278 /* ViewOrdersViewController.swift in Sources */,
 				AC929BC52192BBF0009F1278 /* RoundButton.swift in Sources */,
 				AC929BBB219026CB009F1278 /* Constants.swift in Sources */,
