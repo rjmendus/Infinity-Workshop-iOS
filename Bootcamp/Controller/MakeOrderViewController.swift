@@ -2,7 +2,7 @@
 //  MakeOrderViewController.swift
 //  Bootcamp
 //
-//  Created by justin monsi on 11/16/18.
+//  Created by Rajat Jaic Mendus on 11/16/18.
 //  Copyright © 2018 IODevelopers. All rights reserved.
 //
 
@@ -79,7 +79,6 @@ class MakeOrderViewController: UIViewController {
             case .success:
                 print(response)
                 print("Success")
-//                self.showAlert(alertTitle: "Order Received", alertMessage: "Your order has been placed.", alertAction: "Ok")
                 self.dismiss(animated: true, completion: {});
                 self.navigationController?.popViewController(animated: true);
             case .failure(let error):
