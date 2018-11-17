@@ -45,18 +45,14 @@ class LoginViewController: UIViewController {
     
     func setContainerShadowAndRoundedEdges(container: UIView) {
         // Set rounded corners at top right and bottom right
-        let path = UIBezierPath(roundedRect:container.bounds,
-                                byRoundingCorners:[.topRight, .bottomRight],
-                                cornerRadii: CGSize(width: 20, height:  20))
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = path.cgPath
-        container.layer.mask = maskLayer
+        container.layer.cornerRadius = 20
+        container.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        
         // Set container shadow
-        container.layer.masksToBounds = false
         container.layer.shadowColor = UIColor.black.cgColor
-        container.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        container.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
         container.layer.shadowRadius = 4.0
-        container.layer.shadowOpacity = 0.7
+        container.layer.shadowOpacity = 0.2
         
     }
     

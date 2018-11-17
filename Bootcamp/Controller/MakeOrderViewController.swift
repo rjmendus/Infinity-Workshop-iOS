@@ -96,9 +96,9 @@ class MakeOrderViewController: UIViewController {
         
         // shadow
         currentView.layer.shadowColor = UIColor.black.cgColor
-        currentView.layer.shadowOffset = CGSize(width: 3, height: 3)
-        currentView.layer.shadowOpacity = 0.5
-        currentView.layer.shadowRadius = 3.0
+        currentView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        currentView.layer.shadowOpacity = 0.2
+        currentView.layer.shadowRadius = 4.0
     }
     
     @objc func dateChanged(datePicker: UIDatePicker) {
