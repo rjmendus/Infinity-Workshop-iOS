@@ -11,4 +11,6 @@ import Foundation
 struct Constants {
     
     static let loginAPI = "https://9nfmj2dq1f.execute-api.ap-south-1.amazonaws.com/Development/login"
+    static let viewOrderAPI = "https://9nfmj2dq1f.execute-api.ap-south-1.amazonaws.com/Development/orders/get-all"
+    static let addOrderAPI = "https://9nfmj2dq1f.execute-api.ap-south-1.amazonaws.com/Development/orders/add-order"
 }

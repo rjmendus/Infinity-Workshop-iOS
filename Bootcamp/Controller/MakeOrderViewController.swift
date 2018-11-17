@@ -72,7 +72,7 @@ class MakeOrderViewController: UIViewController {
         }
         
         let params: Parameters = jsonToSend.dictionaryObject ?? [:]
-        let urlString = "https://9nfmj2dq1f.execute-api.ap-south-1.amazonaws.com/Development/orders/add-order"
+        let urlString = Constants.addOrderAPI
         Alamofire.request(urlString, method: .post, parameters: params,encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in
             switch response.result {

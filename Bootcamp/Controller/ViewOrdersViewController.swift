@@ -41,8 +41,7 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func getOrders() {
-        let url = "https://9nfmj2dq1f.execute-api.ap-south-1.amazonaws.com/Development/orders/get-all"
-        
+        let url = Constants.viewOrderAPI
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
