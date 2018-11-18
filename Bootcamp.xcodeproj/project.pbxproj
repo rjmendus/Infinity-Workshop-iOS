@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D20F1DE1C3315099ADE4C6E /* Pods_Bootcamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08037B876676C933069EC32 /* Pods_Bootcamp.framework */; };
+		AC33F0E921A0373100DDC42D /* OrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33F0E821A0373100DDC42D /* OrdersCell.swift */; };
 		AC929B9E218C3082009F1278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC929B9D218C3082009F1278 /* AppDelegate.swift */; };
 		AC929BA3218C3082009F1278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC929BA1218C3082009F1278 /* Main.storyboard */; };
 		AC929BA6218C3082009F1278 /* Bootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC929BA4218C3082009F1278 /* Bootcamp.xcdatamodeld */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		0640A562FED5F73492EB36A7 /* Pods-Bootcamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bootcamp/Pods-Bootcamp.debug.xcconfig"; sourceTree = "<group>"; };
 		75FE6B753E527D4A49E43EC6 /* Pods-Bootcamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bootcamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bootcamp/Pods-Bootcamp.release.xcconfig"; sourceTree = "<group>"; };
+		AC33F0E821A0373100DDC42D /* OrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCell.swift; sourceTree = "<group>"; };
 		AC929B9A218C3082009F1278 /* Bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC929B9D218C3082009F1278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC929BA2218C3082009F1278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				AC929BA1218C3082009F1278 /* Main.storyboard */,
 				AC929BA9218C3085009F1278 /* LaunchScreen.storyboard */,
 				AC929BC42192BBEF009F1278 /* RoundButton.swift */,
+				AC33F0E821A0373100DDC42D /* OrdersCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				AC929BBB219026CB009F1278 /* Constants.swift in Sources */,
 				AC929BB7218C4839009F1278 /* LoginViewController.swift in Sources */,
 				AC929B9E218C3082009F1278 /* AppDelegate.swift in Sources */,
+				AC33F0E921A0373100DDC42D /* OrdersCell.swift in Sources */,
 				AC929BA6218C3082009F1278 /* Bootcamp.xcdatamodeld in Sources */,
 				ACAE8734219EEAC900F8DBEB /* MakeOrderViewController.swift in Sources */,
 				AC929BBF2192B776009F1278 /* HomeViewController.swift in Sources */,

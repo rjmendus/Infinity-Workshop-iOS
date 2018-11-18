@@ -30,7 +30,7 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
         self.getOrders()
         
         // Register the table view cell class and its reuse id
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+//        self.tableView.register(OrdersCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         // (optional) include this line if you want to remove the extra empty cell divider lines
          self.tableView.tableFooterView = UIView()
@@ -65,11 +65,15 @@ class ViewOrdersViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
+        let cell: OrdersCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! OrdersCell
         
         // set the text from the data model
-        cell.textLabel?.text = self.orders[indexPath.row]
+        cell.datelabel.text = self.orders[indexPath.row]
         
+        cell.cellContainerView.layer.shadowColor = UIColor.black.cgColor
+        cell.cellContainerView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        cell.cellContainerView.layer.shadowOpacity = 0.2
+        cell.cellContainerView.layer.shadowRadius = 4.0
         return cell
     }
     
